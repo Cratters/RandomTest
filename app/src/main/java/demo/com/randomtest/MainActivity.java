@@ -11,9 +11,6 @@ import android.view.KeyEvent;
 public class MainActivity extends AppCompatActivity {
 
     String TAG = "RandomTest";
-
-    Context context = this;
-
     int rand,sum = 0;
     int[] mobsRarity = {0,1,1,200};
     int cId;
@@ -46,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed() {  //返回鍵事件
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("確認視窗");
         builder.setMessage("確定要結束應用程式嗎?");
